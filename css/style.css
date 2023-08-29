@@ -1,0 +1,133 @@
+*{margin:0px;
+padding:0px;
+box-sizing: border-box;
+font-family:"roboto," sans-serif;
+text-align: center,
+}
+
+.section{
+  min-height: 100vh,
+    background-image: linear-gradient(rgba(0,0,0,0,.70) rgba(0,0,0,0,.70)), url("../image/background.jpg");
+  background-position: center;
+    backgroung-repeat: no repeat;
+  background-size: cover;
+}
+.hero{
+  width:80%;
+  margin:auto;
+  padding:30px 0px;
+}
+article h1{
+  font-size:50px;
+  font-weight: 500;
+  color:#fcba03;
+}
+article h1::after{
+  content:"";
+  height:3px;
+  width:225px;
+  background-color: #fcba03;
+  display: block;
+  margin:auto;
+}
+img{margin:auto;
+/*display: block;*/
+  margin-top:40px;
+  height: 100px;
+  border-radius: 50px;
+    border:3px soild #bef4f7;
+}
+content{
+  font-size:17px;
+  color-g:#ccc;
+  line-height: 1.5;
+}
+article h5{
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top:30px;
+    color:#fcba03;
+}
+article p{
+  font-size: 18px;
+  color:#fff;
+}
+.grid{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:20px;
+}
+
+.grid-item{
+  text=align: center;
+}
+
+@import
+
+*,*::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+.dark-mode {
+  backgound-color: #333;
+  color: #f0f0f0;
+  transition: all 0.4s ease-in;
+}  
+
+.toggle-switch{
+  position: relative;
+  display: inline-block;
+  width: 3.75rem;
+  heigth:2.13rem;
+  margin-bottom: 0.63rem;
+  margin-inline: auto;
+}
+
+.toggle-seitch input{
+  opacity: 0;
+  width: 0;
+  heigth: 0;
+  
+}
+
+,
+.slider {
+ position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: all 0.4s ease-in;
+  border-radius: 2.13rem;
+}
+
+.slider:before{
+  position: absolute;
+  content:"";
+  height: 1.63rem;
+  width:1.63rem;
+  left: 0.25rem;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  
+}
+
+input:checked +.slide {
+  background-color: #2196f3;
+}
+
+.input:focus + .slide{
+  box-shadow: 0 0 2px #2196f3
+}
+
+.input:checked +.slider:before{
+  transform: translatex(1.63rem);
+}
+
+
